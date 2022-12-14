@@ -11,7 +11,7 @@ install.packages(c("devtools",
                    "stringr",
                    "mgcv",
                    "knitr",
-                   "rmarkdown"))
+                   "rmarkdown"), repos = "https://cloud.r-project.org")
 
 # Install github packages ------------------------------------------------------
 library("devtools")
