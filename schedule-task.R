@@ -1,7 +1,10 @@
 
 # Windows only machines - Task Scheduler for R package install/update
 
-download.file("http://www.ecodata1.github.com/scheduler/set-up.R","set-up.R")
+download.file(
+  "https://raw.githubusercontent.com/ecodata1/scheduler/main/set-up.R",
+  "set-up.R")
+
 source("set-up.R")
 
 
