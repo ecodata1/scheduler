@@ -10,8 +10,8 @@ download.file(
   "https://raw.githubusercontent.com/ecodata1/scheduler/main/install-packages.R",
   path
 )
-source("install-packages.R")
-rscript <- paste0(here::here(), "/set-up.R")
+source(path)
+rscript <- paste0(dir, "/set-up.R")
 taskscheduler_delete(taskname = taskname)
 taskscheduler_create(
   taskname = taskname,
