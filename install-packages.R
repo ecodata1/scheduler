@@ -32,6 +32,5 @@ devtools::install_github("ecodata1/hera",
 # Params for taskscheduler_create() function -----------------------------------
 # Create globals for set-up.R script
 taskname <<- "install_r_packages"
-rscript <<- paste0(here::here(), "/install-packages.R")
 schedule <<- "DAILY"
 starttime <<- "23:00"
