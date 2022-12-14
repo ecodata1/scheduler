@@ -1,5 +1,6 @@
 
-install.packages("taskscheduleR")
+install.packages("taskscheduleR",
+                 repos = "https://cloud.r-project.org")
 library(taskscheduleR)
 download.file("https://raw.githubusercontent.com/ecodata1/scheduler/main/install-packages.R",
               "install-packages.R")
