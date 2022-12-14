@@ -9,3 +9,4 @@ taskscheduler_create(taskname = taskname,
                      rscript = rscript,
                      schedule = schedule,
                      starttime = starttime)
+message("R packages install complete")
