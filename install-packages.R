@@ -14,10 +14,9 @@ install.packages(c("devtools",
 
 # Install github packages ------------------------------------------------------
 library("devtools")
-devtools::install_github("nsj3/darleq3",
-                         dependencies = TRUE,
-                         upgrade = FALSE,
-                         build = FALSE)
+devtools::install_github("ecodata1/darleq3",
+                         ref = "decsription",
+                         dependencies = TRUE)
 devtools::install_github("ecodata1/hera",
                          dependencies = TRUE,
                          upgrade = TRUE)
