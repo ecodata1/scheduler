@@ -19,7 +19,6 @@ repos = "https://cloud.r-project.org"
 )
 
 # Install github packages ------------------------------------------------------
-library("devtools")
 devtools::install_github("ecodata1/darleq3",
   ref = "description",
   dependencies = TRUE,
@@ -33,6 +32,6 @@ devtools::install_github("ecodata1/hera",
 # Params for taskscheduler_create() function -----------------------------------
 # Create globals for set-up.R script
 taskname <<- "install_r_packages"
-rscript <<- paste0(here(), "/install-packages.R")
+rscript <<- paste0(here::here(), "/install-packages.R")
 schedule <<- "DAILY"
 starttime <<- "23:00"
