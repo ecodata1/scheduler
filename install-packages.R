@@ -16,7 +16,8 @@ install.packages(c("devtools",
 library("devtools")
 devtools::install_github("ecodata1/darleq3",
                          ref = "description",
-                         dependencies = TRUE)
+                         dependencies = TRUE,
+                         upgrade = TRUE)
 devtools::install_github("ecodata1/hera",
                          dependencies = TRUE,
                          upgrade = TRUE)
